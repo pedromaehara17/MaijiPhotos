@@ -1,34 +1,26 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
 
 Route::get('/', 'HomeController@index');
 
 Route::get('/home', 'HomeController@home');
+
+
+Route::get('/posts','PostsController@index')->name('verPosts');
+
+Route::get('/posts/create','PostsController@create')->name('criarPost');
+
+Route::post('/posts','PostsController@store');
+
+Route::get('/like','PostsController@like')->name('like');
+
+Route::get('/dislike','PostsController@dislike')->name('dislike');
+
+Route::post('/comment/{id}', 'CommentController@comment');
+
+Route::get('/comment/delete/{id}', 'CommentController@delete');
+
+Route::resource('notifications', 'NotificationController');

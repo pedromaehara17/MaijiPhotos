@@ -43,7 +43,7 @@
 
                     <div class="col-md-12">
 
-                        <input placeholder="senha" id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required="">
+                        <input placeholder="Senha" id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required="">
 
 
                         @if ($errors->has('password'))
@@ -87,7 +87,7 @@
 
                     <div class="col-md-12">
 
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-warning">
 
                             Entrar
 
@@ -117,7 +117,7 @@
 
         <p class="m-3">
 
-            Não tem uma conta? <a href="{{ route('register') }}">Registre-se</a>
+            Não tem uma conta? <a href="{{ route('register') }}" style = "color:#ebbd34">Registre-se</a>
 
         </p>
 

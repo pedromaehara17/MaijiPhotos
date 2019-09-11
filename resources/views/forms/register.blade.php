@@ -6,7 +6,7 @@
 
            
 
-            <h1>Larainsta</h1>
+            <h1>MaijiPhotos</h1>
 
 
             <h3>Inscreva-se para ver fotos e vídeos de seus amigos</h3>
@@ -14,7 +14,7 @@
 
             <div class="mt-2 mb-3">
 
-                <button type="" class="btn btn-primary btn-block">
+                <button type="" class="btn btn-warning"">
 
                     Entre com Facebook
 
@@ -116,7 +116,7 @@
 
                     <div class="col-md-12">
 
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-warning">
 
                             Registrar
 
@@ -158,7 +158,7 @@
 
             <p class="m-3">
 
-                Você tem uma conta? <a href="{{ route('login') }}">entrar</a>
+                Você tem uma conta? <a href="{{ route('login') }}" style= "color:#ebcf1e">entrar</a>
 
             </p>
 
