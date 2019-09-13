@@ -14,8 +14,10 @@
        <div class="col-md-8" >
 
            @foreach ($posts as $post)
+            <div class="card mt-4">
 
-               <div class="card mt-4">
+          <a href="{{route('deletePost', ['idPost' => $post->id])}}" ><img  src="{{ asset('images/delete.jpg') }}" style = "width:35px; height:35px;float:right;"></a>
+               
 
                    <img class="card-img-top" src="{{$post->image_path}}" alt="Card image cap" >
 
