@@ -23,4 +23,6 @@ Route::post('/comment/{id}', 'CommentController@comment');
 
 Route::get('/comment/delete/{id}', 'CommentController@delete');
 
+Route::get('/delete/{id}', 'PostsController@delete')->name('deletePost');
+
 Route::resource('notifications', 'NotificationController');
