@@ -105,4 +105,9 @@ $comments = comment::all();
     
     
 }
+
+  public function delete($id){
+    $delete = Post::destroy($id);
+    return redirect()->route('verPosts');
+  }
 }
